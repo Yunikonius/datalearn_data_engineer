@@ -4,4 +4,4 @@
 
 Ссылка на курс https://github.com/Data-Learn/data-engineering/
 
-Проверка изменений
+Изменения, внесенные через VS Code
