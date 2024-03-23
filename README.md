@@ -5,3 +5,5 @@
 Ссылка на курс https://github.com/Data-Learn/data-engineering/
 
 Изменения, внесенные через VS Code
+
+А это - изменения, для проверки команды pull
