@@ -314,3 +314,17 @@ left join data_learn_dds.orders oo
 on o.order_id = oo.order_num 
 left join data_learn_dds.products p 
 on o.product_id = p.product_src_id;
+
+insert into dds.order_properties 
+(order_id, property_id, value_int)
+select distinct 
+  o2.order_id
+, 5 as property_id
+, e.employee_id as value_int
+from stg.orders o
+left join stg.people p
+on o.region = p.region
+left join dds.orders o2 
+on o.order_id = o2.order_num 
+left join dds.employee e 
+on p.person = e.employee_name
